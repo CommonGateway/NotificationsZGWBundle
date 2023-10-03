@@ -2,7 +2,9 @@
 
 namespace CommonGateway\NotificationsBundle\Service;
 
+use CommonGateway\CoreBundle\Service\CacheService;
 use Doctrine\ORM\EntityManagerInterface;
+use GuzzleHttp\Client;
 use Psr\Log\LoggerInterface;
 
 /**
@@ -39,6 +41,8 @@ class NotificationService
      */
     private LoggerInterface $logger;
 
+    private CacheService $cacheService;
+
 
     /**
      * @param EntityManagerInterface $entityManager The Entity Manager.
@@ -46,12 +50,15 @@ class NotificationService
      */
     public function __construct(
         EntityManagerInterface $entityManager,
-        LoggerInterface $pluginLogger
+        LoggerInterface $pluginLogger,
+        CacheService $cacheService
     ) {
         $this->entityManager = $entityManager;
         $this->logger        = $pluginLogger;
         $this->configuration = [];
         $this->data          = [];
+        $this->cacheService  = $cacheService;
+        $this->client        = new Client();
 
     }//end __construct()
 
@@ -72,6 +79,15 @@ class NotificationService
         var_dump($data);
 
         return $data;
+
+        $memberships = $this->cacheService->searchObjects('', ['$elemMatch' => ['naam' => $data['kanaal']]], ['https://zgw.opencatalogi.nl/schema/nrc.abonnement.schema.json'])['results'];
+
+        $memberships = \Safe\json_decode(\Safe\json_encode($memberships), true);
+
+        foreach($memberships as $membership) {
+            $this->client->post($membership['callbackUrl'], ['headers' => ['Authorization' => $membership['auth']], ['body' => $data]]);
+        }
+
 
     }//end notificationHandler()
 

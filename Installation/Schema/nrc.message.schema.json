@@ -53,17 +53,6 @@
       "description": "Datum en tijd waarop de actie heeft plaatsgevonden.",
       "type": "string",
       "format": "date-time"
-    },
-    "kenmerken": {
-      "title": "kenmerken",
-      "description": "Mapping van kenmerken (sleutel/waarde) van de notificatie. De publicerende API specificeert de toegestane kenmerken.",
-      "type": "object",
-      "additionalProperties": {
-        "title": "kenmerk",
-        "description": "Een waarde behorende bij de sleutel.",
-        "type": "string",
-        "maxLength": 1000
-      }
     }
   }
 }
