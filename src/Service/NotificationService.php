@@ -1,6 +1,6 @@
 <?php
 
-namespace CommonGateway\PetStoreBundle\Service;
+namespace CommonGateway\NotificationsBundle\Service;
 
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
@@ -14,7 +14,7 @@ use Psr\Log\LoggerInterface;
  *
  * @category Service
  */
-class PetStoreService
+class NotificationService
 {
 
     /**
@@ -64,7 +64,7 @@ class PetStoreService
      *
      * @return array A handler must ALWAYS return an array
      */
-    public function petStoreHandler(array $data, array $configuration): array
+    public function notificationHandler(array $data, array $configuration): array
     {
         $this->data          = $data;
         $this->configuration = $configuration;

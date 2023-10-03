@@ -1,0 +1,9 @@
+{
+    "title": "Notification Collection",
+    "$id": "https://example.com/collection/nrc.default.collection.json",
+    "$schema": "https://docs.commongateway.nl/schemas/CollectionEntity.schema.json",
+    "version": "0.0.1",
+    "prefix": "nrc/v1",
+    "plugin": "NotificationBundle",
+    "description": "A collection for the Notification Bundle"
+}

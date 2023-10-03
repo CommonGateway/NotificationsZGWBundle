@@ -1,0 +1,46 @@
+{
+  "$id": "https://zgw.opencatalogi.nl/schema/nrc.filtergroup.schema.json",
+  "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+  "version": "0.1",
+  "title": "Abonnement",
+  "type": "object",
+  "description": "Een abonnement in het NRC",
+  "required": [
+    "callbackUrl",
+    "auth",
+    "kanalen"
+  ],
+  "properties": {
+    "url": {
+      "title": "Url",
+      "description": "URL-referentie naar dit object. Dit is de unieke identificatie en locatie van dit object.",
+      "type": "string",
+      "format": "uri",
+      "readOnly": true,
+      "maxLength": 1000,
+      "minLength": 1
+    },
+    "callbackUrl": {
+      "title": "Callback URL",
+      "description": "De URL waar notificaties naar toe gestuurd dienen te worden. Deze URL dient uit te komen bij een API die geschikt is om notificaties op te ontvangen.",
+      "type": "string",
+      "format": "uri",
+      "maxLength": 200,
+      "minLength": 1
+    },
+    "auth": {
+      "title": "Autorisatie header",
+      "description": "Autorisatie header invulling voor het vesturen naar de \"Callback URL\". Voorbeeld: Bearer a4daa31...",
+      "type": "string",
+      "maxLength": 1000,
+      "minLength": 1
+    },
+    "kanalen": {
+      "description": "Een lijst van kanalen en filters waarop het ABONNEMENT wordt afgenomen.",
+      "type": "array",
+      "items": {
+        "$ref": "https://zgw.opencatalogi.nl/schema/nrc.filtergroup.schema.json"
+      }
+    }
+  }
+}
