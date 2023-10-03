@@ -72,7 +72,8 @@ class NotificationService
         var_dump($data);
 
         return $data;
-    }//end petStoreHandler()
+
+    }//end notificationHandler()
 
 
 }//end class
