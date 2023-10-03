@@ -86,9 +86,7 @@ class NotificationService
             $this->client->post($membership['callbackUrl'], ['headers' => ['Authorization' => $membership['auth'], 'Content-Type' => 'application/json'], ['body' => \Safe\json_encode($object)]]);
         }
 
-
         return $data;
-
 
     }//end notificationHandler()
 
