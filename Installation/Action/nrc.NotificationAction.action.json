@@ -11,11 +11,11 @@
   {
     "==": [
       {
-        "var": "entity"
+        "var": "entity.reference"
       }, "https://zgw.opencatalogi.nl/schema/nrc.message.schema.json"
     ]
   },
-  "class": "CommonGateway\\NotificationsBundle\\NotificationHandler",
+  "class": "CommonGateway\\NotificationsBundle\\ActionHandler\\NotificationHandler",
   "configuration": {
   }
 }
