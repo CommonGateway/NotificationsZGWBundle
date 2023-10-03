@@ -1,5 +1,5 @@
 {
-  "$id": "https://zgw.opencatalogi.nl/schema/nrc.filtergroup.schema.json",
+  "$id": "https://zgw.opencatalogi.nl/schema/nrc.abonnement.schema.json",
   "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
   "version": "0.1",
   "title": "Abonnement",
@@ -40,7 +40,8 @@
       "type": "array",
       "items": {
         "$ref": "https://zgw.opencatalogi.nl/schema/nrc.filtergroup.schema.json"
-      }
+      },
+      "format": "json"
     }
   }
 }
