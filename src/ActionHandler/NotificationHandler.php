@@ -1,9 +1,9 @@
 <?php
 
-namespace CommonGateway\PetStoreBundle\ActionHandler;
+namespace CommonGateway\NotificationsBundle\ActionHandler;
 
 use CommonGateway\CoreBundle\ActionHandler\ActionHandlerInterface;
-use CommonGateway\PetStoreBundle\Service\PetStoreService;
+use CommonGateway\NotificationsBundle\Service\NotificationService;
 
 /**
  * An example handler for the per store.
@@ -12,25 +12,25 @@ use CommonGateway\PetStoreBundle\Service\PetStoreService;
  *
  * @license EUPL-1.2 https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12
  */
-class PetStoreHandler implements ActionHandlerInterface
+class NotificationHandler implements ActionHandlerInterface
 {
 
     /**
      * The pet store service used by the handler
      *
-     * @var PetStoreService
+     * @var NotificationService
      */
-    private PetStoreService $petStoreService;
+    private NotificationService $notificationService;
 
 
     /**
      * The constructor
      *
-     * @param PetStoreService $petStoreService The pet store service
+     * @param NotificationService $notificationService The pet store service
      */
-    public function __construct(PetStoreService $petStoreService)
+    public function __construct(NotificationService $notificationService)
     {
-        $this->petStoreService = $petStoreService;
+        $this->notificationService = $notificationService;
 
     }//end __construct()
 
@@ -66,7 +66,7 @@ class PetStoreHandler implements ActionHandlerInterface
      */
     public function run(array $data, array $configuration): array
     {
-        return $this->petStoreService->petStoreHandler($data, $configuration);
+        return $this->notificationService->notificationHandler($data, $configuration);
 
     }//end run()
 
