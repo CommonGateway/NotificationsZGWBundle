@@ -69,10 +69,9 @@ class NotificationService
         $this->data          = $data;
         $this->configuration = $configuration;
 
-        $this->logger->debug("PetStoreService -> petStoreHandler()");
+        var_dump($data);
 
-        return ['response' => 'Hello. Your PetStoreBundle works'];
-
+        return $data;
     }//end petStoreHandler()
 
 
