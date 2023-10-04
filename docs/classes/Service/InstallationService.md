@@ -1,4 +1,4 @@
-# CommonGateway\PetStoreBundle\Service\InstallationService  
+# CommonGateway\NotificationsBundle\Service\InstallationService  
 
 The installation service for this plugin.
 

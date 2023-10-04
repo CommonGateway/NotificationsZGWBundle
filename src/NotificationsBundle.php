@@ -1,6 +1,6 @@
 <?php
 /**
- * The pet store bundle aims at providing an example common gateway plugin
+ * The notifications bundle ...
  *
  * @author  Conduction.nl <info@conduction.nl>
  * @license EUPL-1.2 https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12

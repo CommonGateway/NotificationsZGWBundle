@@ -1,10 +1,10 @@
 <?php
 return (object)[
-    'rootNamespace' => 'CommonGateway\PetStoreBundle',
+    'rootNamespace' => 'CommonGateway\NotificationsBundle',
     'destDirectory' => 'docs/classes',
     'format' => 'github',
     'classes' => [
-        '\CommonGateway\PetStoreBundle\Service\InstallationService',
-        '\CommonGateway\PetStoreBundle\Service\PetStoreService'
+        '\CommonGateway\NotificationsBundle\Service\InstallationService',
+        '\CommonGateway\NotificationsBundle\Service\NotificationsService'
     ],
 ];

@@ -16,7 +16,7 @@ class NotificationHandler implements ActionHandlerInterface
 {
 
     /**
-     * The pet store service used by the handler
+     * The notifications service used by the handler
      *
      * @var NotificationService
      */
@@ -26,7 +26,7 @@ class NotificationHandler implements ActionHandlerInterface
     /**
      * The constructor
      *
-     * @param NotificationService $notificationService The pet store service
+     * @param NotificationService $notificationService The notifications service
      */
     public function __construct(NotificationService $notificationService)
     {
