@@ -16,3 +16,6 @@ jobs:
         uses: OpenCatalogi/publiccode-action@1.1.1
       - name: Create een Productpagina
         uses: OpenCatalogi/productpage-action@1.0.0
+        with:
+          nl_design_theme_classname: "open-webconcept-theme"
+          pull_from_branche: 'development'
