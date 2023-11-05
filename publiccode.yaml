@@ -1,19 +1,51 @@
-publiccodeYmlVersion: "0.1"
-name: "NotificiationsBundle"
-url: "https://github.com/CommonGateway/NotificiationsBundle"
-releaseDate: "2022-10-01"
-softwareType: addon
-
-platforms:
-  - web
-  
 categories:
-  - collaboration
-  - it-development
-  
-developmentStatus: beta
+- collaboration
+- it-development
 description:
-  nl:
-    shortDescription: "NotificiationsBundle"
   en:
-    shortDescription: "NotificiationsBundle"
+    apiDocumentation: ''
+    awards: []
+    documentation: ''
+    features: []
+    genericName: A bundle to run the Notification Component (NRC)
+    localisedName: ''
+    longDescription: ''
+    screenshots: []
+    shortDescription: NotificiationsBundle
+    videos: []
+  nl:
+    shortDescription: NotificiationsBundle
+developmentStatus: beta
+landingURL: ''
+legal:
+  authorsFile: ''
+  license: ''
+  mainCopyrightOwner: ''
+  repoOwner: ''
+localisation:
+  availableLanguages:
+  - en
+  localisationReady: false
+maintenance:
+  contacts: []
+  contractors: []
+  type: none
+name: NotificiationsBundle
+nl:
+  vng:
+    commonground: []
+    gemma: []
+organisation:
+  description: The common gateway
+  logo: https://avatars.githubusercontent.com/u/106860777?v=4
+  name: CommonGateway
+  url: CommonGateway
+platforms:
+- web
+publiccodeYmlVersion: '0.1'
+releaseDate: '2022-10-01'
+roadmap: ''
+softwareType: addon
+softwareVersion: ''
+url: https://github.com/CommonGateway/NotificiationsBundle
+usedBy: []
