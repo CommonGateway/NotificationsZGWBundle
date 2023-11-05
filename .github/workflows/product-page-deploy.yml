@@ -19,3 +19,4 @@ jobs:
         with:
           nl_design_theme_classname: "open-webconcept-theme"
           pull_from_branche: 'development'
+          start_page: 'https://github.com/CommonGateway/NotificiationsBundle/blob/main/README.md'
