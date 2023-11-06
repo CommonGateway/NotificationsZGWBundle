@@ -20,3 +20,5 @@ jobs:
           nl_design_theme_classname: "open-webconcept-theme"
           pull_from_branche: 'development'
           start_page: 'https://github.com/CommonGateway/NotificiationsBundle/blob/main/README.md'
+          jumbotron_image_placement: "right"
+          jumbotron_image_url: "https://raw.githubusercontent.com/OpenWebconcept/.github/main/docs/componenten.svg"
