@@ -18,23 +18,25 @@ softwareType: softwareAddon
 description:
   en:
     localisedName: null
-    genericName: A bundle to run the Notification Component (NRC)
-    shortDescription: NotificiationsBundle
-    longDescription: A bundle to run the Notification Component (NRC)
+    genericName: null
+    shortDescription: "A bundle to run the Notification Component (NRC)"
+    longDescription: "A bundle to run the Notification Component (NRC)"
     documentation: null
     apiDocumentation: null
-    features: []
+    features:
+      - Common Ground Gateway Plugin
     screenshots: []
     videos: []
     awards: []
   nl:
     localisedName: null
-    genericName: Een bundel om het Notification Component (NRC) te kunnen gebruiken
-    shortDescription: NotificiationsBundle
-    longDescription: Een bundel om het Notification Component (NRC) te kunnen gebruiken
+    genericName: null
+    shortDescription: "Een bundel om het Notification Component (NRC) te kunnen gebruiken"
+    longDescription: "Een bundel om het Notification Component (NRC) te kunnen gebruiken"
     documentation: null
     apiDocumentation: null
-    features: []
+    features:
+      - Common Ground Gateway Plugin
     screenshots: []
     videos: []
     awards: []
